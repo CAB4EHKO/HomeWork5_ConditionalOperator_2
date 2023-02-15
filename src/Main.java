@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1() {
@@ -33,6 +34,17 @@ public class Main {
             System.out.println(oldA);
         } else if (clientOS == 1) {
             System.out.println(a);
+        }
+    }
+    public static void task3() {
+        System.out.println("Задача 3.");
+        int year = 1213;
+        if (year % 4 != 0) {
+            System.out.println(year + " год не високосный.");
+        } else if (year % 100 == 0 && year % 400 != 0) {
+            System.out.println(year + " год не високосный.");
+        } else if (year % 4 == 0 || year % 400 == 0) {
+            System.out.println(year + " год високосный.");
         }
     }
 }
