@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
 
     public static void task1() {
@@ -18,6 +19,7 @@ public class Main {
             System.out.println(a);
         }
     }
+
     public static void task2() {
         System.out.println("Задача 2.");
         int clientOS = 1;
@@ -37,6 +39,7 @@ public class Main {
             System.out.println(a);
         }
     }
+
     public static void task3() {
         System.out.println("Задача 3.");
         int year = 1213;
@@ -48,6 +51,7 @@ public class Main {
             System.out.println(year + " год високосный.");
         }
     }
+
     public static void task4() {
         System.out.println("Задача 4.");
         int deliveryDistance = 101;
@@ -60,9 +64,37 @@ public class Main {
         } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
             daysOfDelivery += 2;
             System.out.println("Для доставки карты нам потребуется " + daysOfDelivery + " дня.");
-        }
-        else {
+        } else {
             System.out.println("Доставки нет.");
+        }
+    }
+
+    public static void task5() {
+        System.out.println("Задача 5.");
+        int monthNumber = 8;
+        switch (monthNumber) {
+            case 12:
+            case 1:
+            case 2:
+                System.out.println("Зима.");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Весна.");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Лето.");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Осень.");
+                break;
+            default:
+                System.out.println("Месяца не существует.");
         }
     }
 }
